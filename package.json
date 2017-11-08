@@ -1,0 +1,56 @@
+{
+  "name": "postgresql-waterline-adapter",
+  "description": "PostgreSQL Adapter for Sails and Waterline",
+  "version": "1.0.1",
+  "author": "jim@biacreations.com",
+  "url": "https://github.com/mpirik/postgresql-waterline-adapter",
+  "keywords": [
+    "postgresql",
+    "postgres",
+    "pg",
+    "node orm",
+    "orm",
+    "waterline",
+    "waterlinejs",
+    "driver",
+    "sails",
+    "sailsjs",
+    "es6"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mpirik/postgresql-waterline-adapter"
+  },
+  "dependencies": {
+    "lodash": "4.17.4",
+    "pg": "7.4.0",
+    "waterline-errors": "0.10.1",
+    "waterline-sequel": "0.6.4"
+  },
+  "devDependencies": {
+    "eslint": "4.10.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.8.0",
+    "grunt": "1.0.1",
+    "grunt-eslint": "20.1.0",
+    "grunt-jsbeautifier": "0.2.13",
+    "mocha": "*",
+    "should": "*",
+    "waterline": "^0.11.0",
+    "waterline-adapter-tests": "^0.11.0"
+  },
+  "bundledDependencies": [
+    "lodash",
+    "pg",
+    "waterline-errors",
+    "waterline-sequel"
+  ],
+  "scripts": {
+    "test": "make test",
+    "lint": "./node_modules/.bin/grunt jsbeautifier && ./node_modules/.bin/grunt eslint",
+    "postinstall": "mkdir -p .git/hooks && cp -f git-hooks/pre-commit .git/hooks/ && chmod 755 .git/hooks/pre-commit"
+  },
+  "main": "lib/adapter",
+  "license": "MIT",
+  "bugs": "https://github.com/mpirik/postgresql-waterline-adapter/issues"
+}
