@@ -1,5 +1,8 @@
 # PostgreSQL Waterline Adapter
 
+[![NPM version](https://img.shields.io/npm/v/postgresql-waterline-adapter.svg?style=flat)](https://npmjs.org/package/postgresql-waterline-adapter)
+[![Known Vulnerabilities](https://snyk.io/test/npm/postgresql-waterline-adapter/badge.svg)](https://snyk.io/test/npm/postgresql-waterline-adapter)
+
 A bare-bones Waterline adapter for [PostgreSQL](http://www.postgresql.org/). It does not support schema creation/modification or streaming data.
 
 ## Compatibility
